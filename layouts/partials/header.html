@@ -1,0 +1,73 @@
+<header class="ed-header">
+  <div class="ed-header__inner">
+
+    <!-- Logo + nom -->
+    <a href="{{ "/" | relLangURL }}" class="ed-header__brand">
+      <img
+        src="{{ "images/logo.png" | relURL }}"
+        alt="ED Magie logo"
+        class="ed-header__logo"
+        width="48"
+        height="48"
+      />
+      <span class="ed-header__title">ED<span class="ed-header__title-sub">Magie</span></span>
+    </a>
+
+    <!-- Navigation desktop -->
+    <nav class="ed-nav" aria-label="Navigation principale">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" class="ed-nav__link {{ if $.IsMenuCurrent "main" . }}ed-nav__link--active{{ end }}">
+          {{ .Name }}
+        </a>
+      {{ end }}
+    </nav>
+
+    <!-- Actions : thème + langue + burger -->
+    <div class="ed-header__actions">
+
+      <!-- Toggle dark/light -->
+      <button class="ed-theme-toggle" id="themeToggle" aria-label="Changer le thème">
+        <!-- Soleil (mode sombre → passer en clair) -->
+        <svg class="ed-theme-toggle__sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1"  x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22"  x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1"  y1="12" x2="3"  y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64"  x2="19.78" y2="4.22"/>
+        </svg>
+        <!-- Lune (mode clair → passer en sombre) -->
+        <svg class="ed-theme-toggle__moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+
+      <!-- Switcher de langue : conserve la page courante via JS -->
+      <a href="#" class="ed-lang-switch" id="langSwitch" aria-label="Changer de langue">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 8l6 6"/><path d="M4 14l6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/>
+          <path d="M22 22l-5-10-5 10"/><path d="M14 18h6"/>
+        </svg>
+        <span id="langLabel">{{ .Site.Language.Lang | upper }}</span>
+      </a>
+
+      <!-- Burger mobile -->
+      <button class="ed-burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <nav class="ed-mobile-nav" id="mobileNav" aria-hidden="true">
+    {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}" class="ed-mobile-nav__link">{{ .Name }}</a>
+    {{ end }}
+      <a href="#" class="ed-mobile-nav__link" id="langSwitchMobile">
+        🌐 <span id="langLabelMobile">{{ .Site.Language.Lang | upper }}</span>
+      </a>
+  </nav>
+</header>

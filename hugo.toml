@@ -1,0 +1,48 @@
+baseURL = ""
+languageCode = 'fr'
+relativeURLs = true
+uglyURLs = false 
+title = 'mon site de magicien'
+defaultContentLanguage = "fr"
+disableKinds = ["taxonomy", "term"]
+theme = "blowfish"
+[article]
+  width = "full"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[languages.fr]
+  languageName = "Français"
+  contentDir = "content/fr"
+  weight = 1
+  [[languages.fr.menu.main]]
+    name = "À Propos"
+    url = "/about/"
+    weight = 1
+  [[languages.fr.menu.main]]
+    name = "Prestations"
+    url = "/prestations/"
+    weight = 2
+  [[languages.fr.menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 3
+
+[languages.en]
+  languageName = "English"
+  contentDir = "content/en"
+  weight = 2
+  [[languages.en.menu.main]]
+    name = "About"
+    url = "/en/about/"
+    weight = 1
+  [[languages.en.menu.main]]
+    name = "Shows"
+    url = "/en/prestations/"
+    weight = 2
+  [[languages.en.menu.main]]
+    name = "Contact"
+    url = "/en/contact/"
+    weight = 3

@@ -1,0 +1,35 @@
+{{- $style := resources.Get "css/custom.css" -}}
+{{- if $style -}}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{- end -}}
+
+{{ $headerJs := resources.Get "js/header.js" }}
+{{ if $headerJs }}
+  <script src="{{ $headerJs.RelPermalink }}" defer></script>
+{{ end }}
+
+{{ $contactJs := resources.Get "js/contact.js" }}
+{{ if $contactJs }}
+  <script src="{{ $contactJs.RelPermalink }}" defer></script>
+{{ end }}
+
+{{ $animations := resources.Get "js/animations.js" }}
+{{ if $animations }}
+<script src="{{ $animations.RelPermalink }}" defer></script>
+{{ end }}
+
+{{ $counters := resources.Get "js/counters.js" }}
+{{ if $counters }}
+<script src="{{ $counters.RelPermalink }}" defer></script>
+{{ end }}
+
+{{ $cursor := resources.Get "js/cursor.js" }}
+{{ if $cursor }}
+<script src="{{ $cursor.RelPermalink }}" defer></script>
+{{ end }}
+
+{{ $typewriter := resources.Get "js/typewriter.js" }}
+{{ if $typewriter }}
+<script src="{{ $typewriter.RelPermalink }}" defer></script>
+{{ end }}
+

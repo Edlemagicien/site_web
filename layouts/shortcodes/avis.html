@@ -1,0 +1,4 @@
+{{ $indexjs := resources.Get "js/index.js" }}
+{{ if $indexjs }}
+<script src="{{ $indexjs.RelPermalink }}"></script>
+{{ end }}
