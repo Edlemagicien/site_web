@@ -5,7 +5,8 @@ Le site présente mes prestations, mon parcours rapidement et permet aux clients
 Construit avec [Hugo](https://gohugo.io/) et le thème [Blowfish](https://blowfish.page/).
 ---
 # structure de fichiers
-Les fichier de contenu sont dans content fr pour les fichiers francais et en pour les fichiers en anglais la partie javascript et css et stocker dans les assets
+-Les fichier de contenu sont dans content fr pour les fichiers francais et en pour les fichiers en anglais
+-la partie javascript et css et stocker dans les assets
 ---
 
 ## Stack technique
