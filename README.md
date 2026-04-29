@@ -1,6 +1,7 @@
 voici mon site web sur le theme de la magie
-#Site javascript/css/html
-Site qui exprime mes talents de magicien close-up spécialisé en magie de cartes. Le site présente mes prestations, mon parcours rapidement et permet aux clients de me contacter pour réserver une animation lors de leurs événements (mariages, soirées d'entreprise, fêtes privées).
+Site fait en javascript/css/html
+Site qui exprime mes talents de magicien close-up spécialisé en magie de cartes. 
+Le site présente mes prestations, mon parcours rapidement et permet aux clients de me contacter pour réserver une animation lors de leurs événements (mariages, soirées d'entreprise, fêtes privées).
 Construit avec [Hugo](https://gohugo.io/) et le thème [Blowfish](https://blowfish.page/).
 
 ---
