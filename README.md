@@ -41,7 +41,7 @@ Ouvrir `static/js/index.js` et ajouter une entrée dans le tableau `DATA` (les a
   quote: "Votre témoignage ici.",
   author: "Prénom N. — Contexte de l'événement"
 }
-
+```
 ## Fonctionnalités
 
 - **Page d'accueil** avec hero animé, cartes flottantes et effet typewriter
