@@ -3,7 +3,7 @@
 - Le site à était réaliser en javascript/css/html
 - Il exprime mes talents de magicien close-up spécialisé en magie de cartes. 
 - Le site présente mes prestations, mon parcours rapidement et permet aux clients de me contacter pour réserver une animation lors de leurs événements (mariages, soirées d'entreprise, fêtes privées).
-Construit avec [Hugo](https://gohugo.io/) et le thème [Blowfish](https://blowfish.page/).
+- Construit avec [Hugo](https://gohugo.io/) et le thème [Blowfish](https://blowfish.page/).
 ---
 # structure de fichiers
 - Les fichier de contenu sont dans content fr pour les fichiers francais et en pour les fichiers en anglais
