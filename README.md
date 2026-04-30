@@ -17,7 +17,6 @@
 - **Langues** : Français (par défaut) / Anglais
 - **Hébergement** : http://caroute.free.fr/
 ---
-Ouvrir [caroute.free.fr](caroute.free.fr)
 
 ### Palette de couleurs (tirée du logo)
 
